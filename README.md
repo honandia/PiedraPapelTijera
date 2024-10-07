@@ -31,7 +31,7 @@ Tras la primera ejecución, la base de datos se creará en /data/game.db
 ## Ejecución de la aplicación
 **Modo 1: API REST**
 
-Puedes ejecutar la aplicación y utilizar la API REST para interactuar con las partidas y obtener estadísticas. Para iniciar el servidor FastAPI:
+Puedes ejecutar la aplicación y utilizar la API REST para interactuar con las partidas y obtener estadísticas. Para iniciar el servidor FastAPI, desde el directorio /app:
 
 `uvicorn main:app --reload`
 
@@ -41,11 +41,11 @@ Una vez iniciado, la API estará disponible en http://127.0.0.1:8000. La documen
 
 Puedes jugar directamente desde la consola en los modos "humano vs máquina" o "máquina vs máquina". Para esto, simplemente ejecuta el siguiente comando:
 
-`python main.py --modo humano`
+`python console_game.py`
 
 Si quieres ejecutar el modo "máquina vs máquina", especifica el número de partidas con:
 
-`python main.py --modo maquina --n_partidas 5`
+`python console_game.py --modo maquina --n_partidas 5`
 
 ## Endpoints de la API
 
